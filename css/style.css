@@ -1,0 +1,345 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    color: #747474;
+    margin: 0px 150px;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    margin: 0px -150px;
+    zoom: 1;
+}
+
+.header-menu {
+    padding: 20px;
+}
+
+.header-menu-list {
+    display: flex;
+    list-style: none;
+}
+
+.department-list:hover .header-department-list {
+    display: block;
+}
+
+.header-department-list {
+    display: none;
+    position: relative;
+    z-index: 1;
+}
+
+.header-department-list ul {
+    list-style: none;
+    position: absolute;
+    top: 0px;
+    left: -140px;
+    box-shadow: 0 5px 10px 0 #d3cfc9;
+    background: #fff;
+}
+
+.header-department-list li {
+    padding: 10px;
+    margin-left: -40px;
+    display: block;
+}
+
+.header-department-list li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.header-department-list li:hover a {
+    color: #00BFA5;
+}
+
+
+.active {
+    color: #00BFA5;
+}
+
+a {
+    margin: 10px;
+    color: #ABABAB;
+    text-decoration: none;
+    outline: 0;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #00BFA5;
+}
+
+.docplanner-logo img {
+    width: 200px;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.intro-title {
+    color: #00BFA5
+}
+
+.intro-text {
+    display: flex;
+    justify-content: space-around;
+    margin: .8em 0;
+    line-height: 1.75;
+    font-weight: 400;
+}
+
+.intro-text p {
+    padding: 20px;
+}
+
+p {
+    display: block;
+    padding: 8px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.sevices {
+    display: flex;
+
+}
+
+.service-card {
+    padding: 10px;
+    border-radius: 21px;
+    color: white;
+    margin: 10px;
+    width: 50%;
+    overflow: hidden;
+}
+
+.service-card-patients {
+    background-color: #00CCB1;
+    height: 450px;
+}
+
+.service-card-doctors {
+    background-color: #3D83DF;
+    height: 450px;
+}
+
+.sevice-card-for {
+    color: rgba(255, 2555, 2555, 0.7);
+}
+
+.service-card-patients-selector select {
+    text-transform: uppercase;
+    font-size: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.service-card-patients-img {
+    margin-top: 10px;
+    display: block;
+}
+
+.service-card-patients-img img {
+    width: 400px;
+    margin-left: 30%
+}
+
+.service-card-doctors-img {
+    margin-top: 50px;
+    display: block;
+}
+
+.service-card-doctors-img img {
+    width: 400px;
+    margin-left: 30%
+}
+
+.info {
+    display: flex;
+    margin: 2.5rem auto 3.125rem;
+}
+
+.info h1 {
+    color: #00b39b;
+    float: left;
+    width: 33%;
+    font-size: 1.625em;
+    margin: .25em 0 .35em;
+    padding-right: 1em;
+    font-weight: 300;
+    letter-spacing: .3px;
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
+
+.info-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 10px;
+}
+
+.info-list li a svg {
+    fill: #c9c9c9;
+    width: 10rem;
+}
+
+.info-list li a svg:hover {
+    fill: #00BFA5;
+}
+
+.information a {
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.info-numbers {
+    display: flex;
+    justify-content: space-between;
+    background-color: #daf7f6;
+    margin-left: -143px;
+    width: 98vw;
+    padding-left: 150px;
+    padding-top: 20px;
+    background-image: url(https://www.docplanner.com/img/logo.png);
+    background-repeat: no-repeat;
+    background-position: -1% 140%;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2.125rem;
+    color: #00b39b;
+}
+
+.info-numbers p {
+    line-height: 1.7142857143;
+    max-width: 415px;
+    font-size: .875em;
+    font-weight: 400;
+}
+
+.info-numbers-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    color: #00b39b;
+    margin-left: 20%;
+    padding-left: 10%;
+}
+
+.info-numbers-boxes p {
+    display: block;
+    text-align: center;
+    font-size: .8125em;
+}
+
+.info-numbers-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-numbers-boxes-content h3 {
+    text-align: center;
+}
+
+.info-numbers-boxes-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    background-size: auto;
+    border-radius: 10px;
+    margin: 20px;
+    width: 30%;
+    padding: 10px;
+}
+
+.improve-text {
+    text-align: center;
+    width: 50%;
+    margin: 0 20%;
+    padding: 80px 0;
+}
+
+.improve-images {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.img-box {
+    margin: 10px;
+}
+
+.text-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxes {
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.boxes:hover {
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.boxes button {
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #1662C6;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: .6em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: .8em;
+    margin-left: -150px;
+    width: 95vw;
+    padding: 50px;
+    border-top: solid .5px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.footer-info a {
+    color: #3d83df
+}
